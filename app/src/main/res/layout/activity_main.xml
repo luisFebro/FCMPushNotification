@@ -2,17 +2,45 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device firebase notif token:::"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/mainTitle"
+        android:paddingTop="400dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Demo Notificação - Mensagem Instantânea"
+        android:textAlignment="center"
+        android:textColor="#1cf499"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Aguarde por uma notificação. Pode ficar no app, sair do app, desligar seu celular, bloquear sua tela. A notificação vai pegar seus globos oculares!"
+        android:textAlignment="center"
+        android:textColor="#b2bec3"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:paddingHorizontal="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@id/mainTitle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
