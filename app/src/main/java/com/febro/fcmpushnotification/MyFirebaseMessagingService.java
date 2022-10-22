@@ -73,6 +73,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
     @RequiresApi(api = Build.VERSION_CODES.S)
     private void sendNotification(RemoteMessage remoteData) {
+        if(remoteData == null) return;
+
         Map<String, String> map = remoteData.getData();
 //        String notifId = map.get("id");
         String msgType = map.get("type");
