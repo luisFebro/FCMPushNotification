@@ -1,33 +1,62 @@
 {
   "project_info": {
-    "project_number": "386153637403",
-    "project_id": "fcmpushnotification-9e34c",
-    "storage_bucket": "fcmpushnotification-9e34c.appspot.com"
+    "project_number": "250562215318",
+    "project_id": "marica-telecom-app",
+    "storage_bucket": "marica-telecom-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:386153637403:android:d19355b6aa261ad4cf3abe",
+        "mobilesdk_app_id": "1:250562215318:android:6cd2b88c219a548f9bf1b7",
         "android_client_info": {
           "package_name": "com.febro.fcmpushnotification"
         }
       },
       "oauth_client": [
         {
-          "client_id": "386153637403-phjgabsf01q6m15nic6t3tqfu90t7b01.apps.googleusercontent.com",
+          "client_id": "250562215318-lq6vl4gvolo86vrlt7rh502v7quarvd7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDrfhiJOVIFWCp5WHtX6zGUJwtFTc5NIak"
+          "current_key": "AIzaSyAbRKHf8B_qcUGTuI6k8FfzFFkIWyBwTwY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "386153637403-phjgabsf01q6m15nic6t3tqfu90t7b01.apps.googleusercontent.com",
+              "client_id": "250562215318-lq6vl4gvolo86vrlt7rh502v7quarvd7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250562215318:android:94a238e57c4c372d9bf1b7",
+        "android_client_info": {
+          "package_name": "com.maricatele.br"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250562215318-lq6vl4gvolo86vrlt7rh502v7quarvd7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbRKHf8B_qcUGTuI6k8FfzFFkIWyBwTwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250562215318-lq6vl4gvolo86vrlt7rh502v7quarvd7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

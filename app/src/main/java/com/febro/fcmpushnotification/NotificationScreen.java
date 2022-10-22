@@ -13,6 +13,15 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
+/* An error occured when trying to authenticate to the FCM servers
+
+Need to allow API and services at console cloud google
+https://console.cloud.google.com/apis/library/googlecloudmessaging.googleapis.com?project=NOMEPROJETO(exemplo: fcmpushnotification-9e34c)
+
+// doc for payload: https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages
+
+*/
+
 public class NotificationScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

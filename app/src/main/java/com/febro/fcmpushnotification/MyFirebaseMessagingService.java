@@ -42,11 +42,11 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         super.onMessageReceived(remoteMessage);
         // TODO(developer): Handle FCM messages here.
         // Not getting messages here? See why this may be: https://goo.gl/39bRNJ
-        Log.d("LOGG_remoteMessage", "From: " + remoteMessage.getFrom());
+        Log.d("TAG_remoteMessage", "From: " + remoteMessage.getFrom());
 
         // Check if message contains a data payload.
         if (remoteMessage.getData().size() > 0) {
-            Log.d("LOGG_payload", "Message data payload: " + remoteMessage.getData());
+            Log.d("TAG_payload", "Message data payload: " + remoteMessage.getData());
 
             if (/* Check if data needs to be processed by long running job */ true) {
                 // For long-running tasks (10 seconds or more) use WorkManager.
@@ -60,7 +60,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         // Check if message contains a notification payload.
         if (remoteMessage.getNotification() != null) {
-            Log.d("LOGG_notification", "Message Notification Body: " + remoteMessage.getNotification().getBody());
+            Log.d("TAG_notification", "Message Notification Body: " + remoteMessage.getNotification().getBody());
         }
 
         // Also if you intend on generating your own notifications as a result of a received FCM
@@ -153,7 +153,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     @Override
     public void onNewToken(String token) {
         super.onNewToken(token);
-        Log.d("LOGG_newToken", "onNewToken: " + token);
+        Log.d("TAG_newToken", "onNewToken: " + token);
         getSharedPreferences("_", MODE_PRIVATE).edit().putString("FCM_TOKEN", token).apply();
         //all the logic of the old FirebaseInstanceIdService.onTokenRefresh() here
         //usually, to send to the app server the instance ID token
@@ -165,6 +165,9 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     }
 
     public static void subscribeUser(Context context) {
+        String tk = getToken(context);
+        Log.d("TAG_notif_token", tk);
+
         FirebaseMessaging.getInstance().subscribeToTopic("all")
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override

@@ -15,8 +15,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        String tk = MyFirebaseMessagingService.getToken(this);
         MyFirebaseMessagingService.subscribeUser(this);
-        Log.d("LOGG_notif_token", "notifToken: " + tk);
     }
 }
