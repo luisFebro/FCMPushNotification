@@ -166,7 +166,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
     public static void subscribeUser(Context context) {
         String tk = getToken(context);
-        Log.d("TAG_notif_token", tk);
+        Log.d("TAG_notif_token", "token: " + tk);
 
         FirebaseMessaging.getInstance().subscribeToTopic("all")
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
